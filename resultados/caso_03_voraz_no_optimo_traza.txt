@@ -1,0 +1,38 @@
+Caso: caso_03_voraz_no_optimo   (código v0.1.0, 2026-10-30T04:35:29, Python 3.12.3)
+Archivo: casos/caso_03_voraz_no_optimo.json
+
+=== Parte 1: aceleración de la cadena (programación dinámica) ===
+n = 3 etapas, presupuesto B = 100, duración normal = 22
+Presupuesto efectivo B' = 10; tabla 4 x 11; celdas calculadas = 33; celdas donde la etapa cabe = 23
+Tabla DP[i][b] (mayor reducción con etapas 1..i y presupuesto b):
+      b =  0  1  2  3  4  5  6  7  8  9 10
+  i = 0    0  0  0  0  0  0  0  0  0  0  0
+  i = 1    0  0  3  3  3  3  3  3  3  3  3
+  i = 2    0  0  3  3  3  4  4  7  7  7  7
+  i = 3    0  0  3  7  7 10 10 10 11 11 14
+Decisiones (1 = el máximo eligió acelerar la etapa i; fila 0 sin decisión):
+      b =  0  1  2  3  4  5  6  7  8  9 10
+  i = 0    0  0  0  0  0  0  0  0  0  0  0
+  i = 1    0  0  1  1  1  1  1  1  1  1  1
+  i = 2    0  0  0  0  0  1  1  1  1  1  1
+  i = 3    0  0  0  1  1  1  1  1  1  1  1
+Reconstrucción (de la última etapa a la primera):
+  etapa   3: b = 10, DP[i][b] = 14, DP[i-1][b] = 7 -> acelerar (b siguiente = 7)
+  etapa   2: b = 7, DP[i][b] = 7, DP[i-1][b] = 3 -> acelerar (b siguiente = 2)
+  etapa   1: b = 2, DP[i][b] = 3, DP[i-1][b] = 0 -> acelerar (b siguiente = 0)
+Etapas aceleradas: [1, 2, 3]
+Costo total = 10 <= B = 100; reducción = 14; duración mínima = 8
+Verificación: {'costo_dentro_del_presupuesto': True, 'reduccion_coincide_con_tabla': True, 'd_menor_o_igual_t': True}
+Tiempo (ms): mediana = 0.006433, mínimo = 0.005037
+
+=== Parte 2: cobertura de auditoría (voraz) ===
+n = 3 interacciones, r = 6 categorías, d = 4
+Factibilidad verificada: la unión de todas las interacciones cubre las r categorías.
+Elecciones del voraz:
+  paso 1: interacción I3 cubre 4 nuevas ['sesgo', 'privacidad', 'seguridad', 'toxicidad']; quedan 2
+  paso 2: interacción I1 cubre 1 nuevas ['formato']; quedan 1
+  paso 3: interacción I2 cubre 1 nuevas ['veracidad']; quedan 0
+Interacciones auditadas: ['I3', 'I1', 'I2'] (3 auditorías)
+Verificación: {'cubre_todas_las_categorias': True}
+Óptimo exacto (fuerza bruta): 2 -> ['I1', 'I2']; razón voraz/óptimo = 1.5; cota H(d) = 2.083333; cumple la cota: True
+Tiempo voraz (ms): mediana = 0.006397, mínimo = 0.005705

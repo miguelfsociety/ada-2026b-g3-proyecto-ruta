@@ -1,0 +1,238 @@
+{
+  "caso": "caso_01_formalizacion",
+  "archivo": "casos/caso_01_formalizacion.json",
+  "version_codigo": "0.1.0",
+  "fecha": "2026-10-30T04:35:29",
+  "python": "3.12.3",
+  "plataforma": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+  "repeticiones": 5,
+  "aceleracion": {
+    "instancia": {
+      "n": 4,
+      "presupuesto": 6,
+      "duracion_normal": 23
+    },
+    "tiempo_ms": {
+      "mediana": 0.008417,
+      "minimo": 0.005939,
+      "mediciones": [
+        0.023694,
+        0.012797,
+        0.008417,
+        0.006596,
+        0.005939
+      ]
+    },
+    "resultado": {
+      "etapas_aceleradas": [
+        2,
+        3
+      ],
+      "costo_total": 6,
+      "presupuesto": 6,
+      "reduccion_total": 8,
+      "duracion_normal": 23,
+      "duracion_minima": 15
+    },
+    "traza": {
+      "presupuesto_efectivo": 6,
+      "dimension_tabla": [
+        5,
+        7
+      ],
+      "celdas_calculadas": 28,
+      "celdas_donde_la_etapa_cabe": 16,
+      "decisiones_reconstruccion": [
+        {
+          "etapa": 4,
+          "b": 6,
+          "DP[i][b]": 8,
+          "DP[i-1][b]": 8,
+          "decision": "no acelerar",
+          "b_siguiente": 6
+        },
+        {
+          "etapa": 3,
+          "b": 6,
+          "DP[i][b]": 8,
+          "DP[i-1][b]": 5,
+          "decision": "acelerar",
+          "b_siguiente": 4
+        },
+        {
+          "etapa": 2,
+          "b": 4,
+          "DP[i][b]": 5,
+          "DP[i-1][b]": 2,
+          "decision": "acelerar",
+          "b_siguiente": 0
+        },
+        {
+          "etapa": 1,
+          "b": 0,
+          "DP[i][b]": 0,
+          "DP[i-1][b]": 0,
+          "decision": "no acelerar",
+          "b_siguiente": 0
+        }
+      ],
+      "verificacion": {
+        "costo_dentro_del_presupuesto": true,
+        "reduccion_coincide_con_tabla": true,
+        "d_menor_o_igual_t": true
+      },
+      "tabla_DP": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          5,
+          5,
+          5
+        ],
+        [
+          0,
+          0,
+          3,
+          3,
+          5,
+          5,
+          8
+        ],
+        [
+          0,
+          0,
+          3,
+          3,
+          5,
+          5,
+          8
+        ]
+      ],
+      "decisiones_tabla": [
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  "auditoria": {
+    "instancia": {
+      "n": 4,
+      "r": 5,
+      "d": 3
+    },
+    "factible": true,
+    "tiempo_ms": {
+      "mediana": 0.008278,
+      "minimo": 0.006836,
+      "mediciones": [
+        0.019908,
+        0.011109,
+        0.008278,
+        0.006836,
+        0.006989
+      ]
+    },
+    "resultado": {
+      "interacciones_auditadas": [
+        "1",
+        "3"
+      ],
+      "numero_de_auditorias": 2,
+      "d_max_categorias_por_interaccion": 3,
+      "cota_H_d": 1.833333
+    },
+    "traza": {
+      "factibilidad_verificada": true,
+      "elecciones": [
+        {
+          "paso": 1,
+          "interaccion": "1",
+          "categorias_nuevas": [
+            "1",
+            "2",
+            "3"
+          ],
+          "cantidad_nuevas": 3,
+          "categorias_restantes": 2
+        },
+        {
+          "paso": 2,
+          "interaccion": "3",
+          "categorias_nuevas": [
+            "4",
+            "5"
+          ],
+          "cantidad_nuevas": 2,
+          "categorias_restantes": 0
+        }
+      ],
+      "verificacion": {
+        "cubre_todas_las_categorias": true
+      }
+    },
+    "verificacion_exacta": {
+      "optimo": 2,
+      "seleccion_optima": [
+        "1",
+        "3"
+      ],
+      "razon_voraz_sobre_optimo": 1.0,
+      "cumple_cota_H_d": true,
+      "tiempo_ms": 0.010944
+    }
+  }
+}

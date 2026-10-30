@@ -1,0 +1,51 @@
+Caso: caso_05_sintetico   (código v0.1.0, 2026-10-30T04:35:29, Python 3.12.3)
+Archivo: casos/caso_05_sintetico.json
+
+=== Parte 1: aceleración de la cadena (programación dinámica) ===
+n = 25 etapas, presupuesto B = 80, duración normal = 295
+Presupuesto efectivo B' = 80; tabla 26 x 81; celdas calculadas = 2025; celdas donde la etapa cabe = 1866
+Tabla DP: omitida por tamaño (ver LIMITE_CELDAS_TRAZA)
+Reconstrucción (de la última etapa a la primera):
+  etapa  25: b = 80, DP[i][b] = 158, DP[i-1][b] = 156 -> acelerar (b siguiente = 76)
+  etapa  24: b = 76, DP[i][b] = 148, DP[i-1][b] = 142 -> acelerar (b siguiente = 70)
+  etapa  23: b = 70, DP[i][b] = 134, DP[i-1][b] = 128 -> acelerar (b siguiente = 64)
+  etapa  22: b = 64, DP[i][b] = 120, DP[i-1][b] = 120 -> no acelerar (b siguiente = 64)
+  etapa  21: b = 64, DP[i][b] = 120, DP[i-1][b] = 110 -> acelerar (b siguiente = 60)
+  etapa  20: b = 60, DP[i][b] = 105, DP[i-1][b] = 100 -> acelerar (b siguiente = 52)
+  etapa  19: b = 52, DP[i][b] = 95, DP[i-1][b] = 95 -> no acelerar (b siguiente = 52)
+  etapa  18: b = 52, DP[i][b] = 95, DP[i-1][b] = 95 -> no acelerar (b siguiente = 52)
+  etapa  17: b = 52, DP[i][b] = 95, DP[i-1][b] = 87 -> acelerar (b siguiente = 43)
+  etapa  16: b = 43, DP[i][b] = 81, DP[i-1][b] = 72 -> acelerar (b siguiente = 40)
+  etapa  15: b = 40, DP[i][b] = 67, DP[i-1][b] = 63 -> acelerar (b siguiente = 31)
+  etapa  14: b = 31, DP[i][b] = 57, DP[i-1][b] = 57 -> no acelerar (b siguiente = 31)
+  etapa  13: b = 31, DP[i][b] = 57, DP[i-1][b] = 57 -> no acelerar (b siguiente = 31)
+  etapa  12: b = 31, DP[i][b] = 57, DP[i-1][b] = 57 -> no acelerar (b siguiente = 31)
+  etapa  11: b = 31, DP[i][b] = 57, DP[i-1][b] = 57 -> no acelerar (b siguiente = 31)
+  etapa  10: b = 31, DP[i][b] = 57, DP[i-1][b] = 54 -> acelerar (b siguiente = 24)
+  etapa   9: b = 24, DP[i][b] = 49, DP[i-1][b] = 49 -> no acelerar (b siguiente = 24)
+  etapa   8: b = 24, DP[i][b] = 49, DP[i-1][b] = 49 -> no acelerar (b siguiente = 24)
+  etapa   7: b = 24, DP[i][b] = 49, DP[i-1][b] = 38 -> acelerar (b siguiente = 16)
+  etapa   6: b = 16, DP[i][b] = 33, DP[i-1][b] = 33 -> no acelerar (b siguiente = 16)
+  etapa   5: b = 16, DP[i][b] = 33, DP[i-1][b] = 20 -> acelerar (b siguiente = 13)
+  etapa   4: b = 13, DP[i][b] = 20, DP[i-1][b] = 20 -> no acelerar (b siguiente = 13)
+  etapa   3: b = 13, DP[i][b] = 20, DP[i-1][b] = 11 -> acelerar (b siguiente = 8)
+  etapa   2: b = 8, DP[i][b] = 11, DP[i-1][b] = 0 -> acelerar (b siguiente = 5)
+  etapa   1: b = 5, DP[i][b] = 0, DP[i-1][b] = 0 -> no acelerar (b siguiente = 5)
+Etapas aceleradas: [2, 3, 5, 7, 10, 15, 16, 17, 20, 21, 23, 24, 25]
+Costo total = 75 <= B = 80; reducción = 158; duración mínima = 137
+Verificación: {'costo_dentro_del_presupuesto': True, 'reduccion_coincide_con_tabla': True, 'd_menor_o_igual_t': True}
+Tiempo (ms): mediana = 0.113682, mínimo = 0.112213
+
+=== Parte 2: cobertura de auditoría (voraz) ===
+n = 14 interacciones, r = 20 categorías, d = 8
+Factibilidad verificada: la unión de todas las interacciones cubre las r categorías.
+Elecciones del voraz:
+  paso 1: interacción 3 cubre 8 nuevas ['1', '2', '3', '4', '7', '11', '14', '16']; quedan 12
+  paso 2: interacción 5 cubre 5 nuevas ['10', '13', '17', '19', '20']; quedan 7
+  paso 3: interacción 8 cubre 4 nuevas ['5', '9', '15', '18']; quedan 3
+  paso 4: interacción 6 cubre 2 nuevas ['8', '12']; quedan 1
+  paso 5: interacción 2 cubre 1 nuevas ['6']; quedan 0
+Interacciones auditadas: ['3', '5', '8', '6', '2'] (5 auditorías)
+Verificación: {'cubre_todas_las_categorias': True}
+Óptimo exacto (fuerza bruta): 4 -> ['2', '3', '6', '13']; razón voraz/óptimo = 1.25; cota H(d) = 2.717857; cumple la cota: True
+Tiempo voraz (ms): mediana = 0.019347, mínimo = 0.018915

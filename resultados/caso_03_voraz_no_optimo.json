@@ -1,0 +1,251 @@
+{
+  "caso": "caso_03_voraz_no_optimo",
+  "archivo": "casos/caso_03_voraz_no_optimo.json",
+  "version_codigo": "0.1.0",
+  "fecha": "2026-10-30T04:35:29",
+  "python": "3.12.3",
+  "plataforma": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+  "repeticiones": 5,
+  "aceleracion": {
+    "instancia": {
+      "n": 3,
+      "presupuesto": 100,
+      "duracion_normal": 22
+    },
+    "tiempo_ms": {
+      "mediana": 0.006433,
+      "minimo": 0.005037,
+      "mediciones": [
+        0.011568,
+        0.006433,
+        0.005476,
+        0.005037,
+        0.049912
+      ]
+    },
+    "resultado": {
+      "etapas_aceleradas": [
+        1,
+        2,
+        3
+      ],
+      "costo_total": 10,
+      "presupuesto": 100,
+      "reduccion_total": 14,
+      "duracion_normal": 22,
+      "duracion_minima": 8
+    },
+    "traza": {
+      "presupuesto_efectivo": 10,
+      "dimension_tabla": [
+        4,
+        11
+      ],
+      "celdas_calculadas": 33,
+      "celdas_donde_la_etapa_cabe": 23,
+      "decisiones_reconstruccion": [
+        {
+          "etapa": 3,
+          "b": 10,
+          "DP[i][b]": 14,
+          "DP[i-1][b]": 7,
+          "decision": "acelerar",
+          "b_siguiente": 7
+        },
+        {
+          "etapa": 2,
+          "b": 7,
+          "DP[i][b]": 7,
+          "DP[i-1][b]": 3,
+          "decision": "acelerar",
+          "b_siguiente": 2
+        },
+        {
+          "etapa": 1,
+          "b": 2,
+          "DP[i][b]": 3,
+          "DP[i-1][b]": 0,
+          "decision": "acelerar",
+          "b_siguiente": 0
+        }
+      ],
+      "verificacion": {
+        "costo_dentro_del_presupuesto": true,
+        "reduccion_coincide_con_tabla": true,
+        "d_menor_o_igual_t": true
+      },
+      "tabla_DP": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        [
+          0,
+          0,
+          3,
+          3,
+          3,
+          4,
+          4,
+          7,
+          7,
+          7,
+          7
+        ],
+        [
+          0,
+          0,
+          3,
+          7,
+          7,
+          10,
+          10,
+          10,
+          11,
+          11,
+          14
+        ]
+      ],
+      "decisiones_tabla": [
+        [
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  "auditoria": {
+    "instancia": {
+      "n": 3,
+      "r": 6,
+      "d": 4
+    },
+    "factible": true,
+    "tiempo_ms": {
+      "mediana": 0.006397,
+      "minimo": 0.005705,
+      "mediciones": [
+        0.010889,
+        0.006905,
+        0.006397,
+        0.005705,
+        0.006014
+      ]
+    },
+    "resultado": {
+      "interacciones_auditadas": [
+        "I3",
+        "I1",
+        "I2"
+      ],
+      "numero_de_auditorias": 3,
+      "d_max_categorias_por_interaccion": 4,
+      "cota_H_d": 2.083333
+    },
+    "traza": {
+      "factibilidad_verificada": true,
+      "elecciones": [
+        {
+          "paso": 1,
+          "interaccion": "I3",
+          "categorias_nuevas": [
+            "sesgo",
+            "privacidad",
+            "seguridad",
+            "toxicidad"
+          ],
+          "cantidad_nuevas": 4,
+          "categorias_restantes": 2
+        },
+        {
+          "paso": 2,
+          "interaccion": "I1",
+          "categorias_nuevas": [
+            "formato"
+          ],
+          "cantidad_nuevas": 1,
+          "categorias_restantes": 1
+        },
+        {
+          "paso": 3,
+          "interaccion": "I2",
+          "categorias_nuevas": [
+            "veracidad"
+          ],
+          "cantidad_nuevas": 1,
+          "categorias_restantes": 0
+        }
+      ],
+      "verificacion": {
+        "cubre_todas_las_categorias": true
+      }
+    },
+    "verificacion_exacta": {
+      "optimo": 2,
+      "seleccion_optima": [
+        "I1",
+        "I2"
+      ],
+      "razon_voraz_sobre_optimo": 1.5,
+      "cumple_cota_H_d": true,
+      "tiempo_ms": 0.006999
+    }
+  }
+}

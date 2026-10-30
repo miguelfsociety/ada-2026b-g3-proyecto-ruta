@@ -1,0 +1,20 @@
+{
+  "id": "caso_03_voraz_no_optimo",
+  "descripcion": "Auditoría donde el voraz usa 3 interacciones y el óptimo 2. Aceleración con presupuesto que alcanza para todas las etapas (B' = suma de costos).",
+  "aceleracion": {
+    "presupuesto": 100,
+    "etapas": [
+      {"nombre": "recepcion", "t": 6, "c": 2, "d": 3},
+      {"nombre": "validacion", "t": 9, "c": 5, "d": 4},
+      {"nombre": "respuesta", "t": 7, "c": 3, "d": 7}
+    ]
+  },
+  "auditoria": {
+    "categorias": ["sesgo", "privacidad", "formato", "seguridad", "toxicidad", "veracidad"],
+    "interacciones": [
+      {"id": "I1", "cubre": ["sesgo", "privacidad", "formato"]},
+      {"id": "I2", "cubre": ["seguridad", "toxicidad", "veracidad"]},
+      {"id": "I3", "cubre": ["sesgo", "privacidad", "seguridad", "toxicidad"]}
+    ]
+  }
+}

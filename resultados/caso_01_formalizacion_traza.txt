@@ -1,0 +1,40 @@
+Caso: caso_01_formalizacion   (código v0.1.0, 2026-10-30T04:35:29, Python 3.12.3)
+Archivo: casos/caso_01_formalizacion.json
+
+=== Parte 1: aceleración de la cadena (programación dinámica) ===
+n = 4 etapas, presupuesto B = 6, duración normal = 23
+Presupuesto efectivo B' = 6; tabla 5 x 7; celdas calculadas = 28; celdas donde la etapa cabe = 16
+Tabla DP[i][b] (mayor reducción con etapas 1..i y presupuesto b):
+      b = 0 1 2 3 4 5 6
+  i = 0   0 0 0 0 0 0 0
+  i = 1   0 0 0 2 2 2 2
+  i = 2   0 0 0 2 5 5 5
+  i = 3   0 0 3 3 5 5 8
+  i = 4   0 0 3 3 5 5 8
+Decisiones (1 = el máximo eligió acelerar la etapa i; fila 0 sin decisión):
+      b = 0 1 2 3 4 5 6
+  i = 0   0 0 0 0 0 0 0
+  i = 1   0 0 0 1 1 1 1
+  i = 2   0 0 0 0 1 1 1
+  i = 3   0 0 1 1 0 0 1
+  i = 4   0 0 0 0 0 0 0
+Reconstrucción (de la última etapa a la primera):
+  etapa   4: b = 6, DP[i][b] = 8, DP[i-1][b] = 8 -> no acelerar (b siguiente = 6)
+  etapa   3: b = 6, DP[i][b] = 8, DP[i-1][b] = 5 -> acelerar (b siguiente = 4)
+  etapa   2: b = 4, DP[i][b] = 5, DP[i-1][b] = 2 -> acelerar (b siguiente = 0)
+  etapa   1: b = 0, DP[i][b] = 0, DP[i-1][b] = 0 -> no acelerar (b siguiente = 0)
+Etapas aceleradas: [2, 3]
+Costo total = 6 <= B = 6; reducción = 8; duración mínima = 15
+Verificación: {'costo_dentro_del_presupuesto': True, 'reduccion_coincide_con_tabla': True, 'd_menor_o_igual_t': True}
+Tiempo (ms): mediana = 0.008417, mínimo = 0.005939
+
+=== Parte 2: cobertura de auditoría (voraz) ===
+n = 4 interacciones, r = 5 categorías, d = 3
+Factibilidad verificada: la unión de todas las interacciones cubre las r categorías.
+Elecciones del voraz:
+  paso 1: interacción 1 cubre 3 nuevas ['1', '2', '3']; quedan 2
+  paso 2: interacción 3 cubre 2 nuevas ['4', '5']; quedan 0
+Interacciones auditadas: ['1', '3'] (2 auditorías)
+Verificación: {'cubre_todas_las_categorias': True}
+Óptimo exacto (fuerza bruta): 2 -> ['1', '3']; razón voraz/óptimo = 1.0; cota H(d) = 1.833333; cumple la cota: True
+Tiempo voraz (ms): mediana = 0.008278, mínimo = 0.006836

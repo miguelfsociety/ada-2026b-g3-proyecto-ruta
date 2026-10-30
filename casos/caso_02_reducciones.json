@@ -1,0 +1,17 @@
+{
+  "id": "caso_02_reducciones",
+  "descripcion": "Instancias producidas por las reducciones del informe: mochila w=(3,4,2), v=(4,5,3), W=5 -> c=w, d=t=v, B=W; grafo v1..v4 con aristas e1={v1,v2}, e2={v1,v3}, e3={v2,v3}, e4={v3,v4}.",
+  "aceleracion": {
+    "presupuesto": 5,
+    "etapas": [[4, 3, 4], [5, 4, 5], [3, 2, 3]]
+  },
+  "auditoria": {
+    "categorias": ["e1", "e2", "e3", "e4"],
+    "interacciones": [
+      {"id": "v1", "cubre": ["e1", "e2"]},
+      {"id": "v2", "cubre": ["e1", "e3"]},
+      {"id": "v3", "cubre": ["e2", "e3", "e4"]},
+      {"id": "v4", "cubre": ["e4"]}
+    ]
+  }
+}

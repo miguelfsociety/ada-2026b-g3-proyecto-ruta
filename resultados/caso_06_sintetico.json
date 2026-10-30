@@ -1,0 +1,722 @@
+{
+  "caso": "caso_06_sintetico",
+  "archivo": "casos/caso_06_sintetico.json",
+  "version_codigo": "0.1.0",
+  "fecha": "2026-10-30T04:35:29",
+  "python": "3.12.3",
+  "plataforma": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+  "repeticiones": 5,
+  "aceleracion": {
+    "instancia": {
+      "n": 60,
+      "presupuesto": 300,
+      "duracion_normal": 651
+    },
+    "tiempo_ms": {
+      "mediana": 1.045926,
+      "minimo": 1.025894,
+      "mediciones": [
+        1.27734,
+        1.045926,
+        1.025894,
+        1.030857,
+        1.142126
+      ]
+    },
+    "resultado": {
+      "etapas_aceleradas": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        30,
+        31,
+        32,
+        33,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        48,
+        49,
+        50,
+        51,
+        54,
+        55,
+        57,
+        58,
+        59,
+        60
+      ],
+      "costo_total": 298,
+      "presupuesto": 300,
+      "reduccion_total": 336,
+      "duracion_normal": 651,
+      "duracion_minima": 315
+    },
+    "traza": {
+      "presupuesto_efectivo": 300,
+      "dimension_tabla": [
+        61,
+        301
+      ],
+      "celdas_calculadas": 18060,
+      "celdas_donde_la_etapa_cabe": 17715,
+      "decisiones_reconstruccion": [
+        {
+          "etapa": 60,
+          "b": 300,
+          "DP[i][b]": 336,
+          "DP[i-1][b]": 333,
+          "decision": "acelerar",
+          "b_siguiente": 295
+        },
+        {
+          "etapa": 59,
+          "b": 295,
+          "DP[i][b]": 332,
+          "DP[i-1][b]": 328,
+          "decision": "acelerar",
+          "b_siguiente": 294
+        },
+        {
+          "etapa": 58,
+          "b": 294,
+          "DP[i][b]": 328,
+          "DP[i-1][b]": 323,
+          "decision": "acelerar",
+          "b_siguiente": 289
+        },
+        {
+          "etapa": 57,
+          "b": 289,
+          "DP[i][b]": 322,
+          "DP[i-1][b]": 314,
+          "decision": "acelerar",
+          "b_siguiente": 283
+        },
+        {
+          "etapa": 56,
+          "b": 283,
+          "DP[i][b]": 313,
+          "DP[i-1][b]": 313,
+          "decision": "no acelerar",
+          "b_siguiente": 283
+        },
+        {
+          "etapa": 55,
+          "b": 283,
+          "DP[i][b]": 313,
+          "DP[i-1][b]": 303,
+          "decision": "acelerar",
+          "b_siguiente": 278
+        },
+        {
+          "etapa": 54,
+          "b": 278,
+          "DP[i][b]": 303,
+          "DP[i-1][b]": 293,
+          "decision": "acelerar",
+          "b_siguiente": 273
+        },
+        {
+          "etapa": 53,
+          "b": 273,
+          "DP[i][b]": 293,
+          "DP[i-1][b]": 293,
+          "decision": "no acelerar",
+          "b_siguiente": 273
+        },
+        {
+          "etapa": 52,
+          "b": 273,
+          "DP[i][b]": 293,
+          "DP[i-1][b]": 293,
+          "decision": "no acelerar",
+          "b_siguiente": 273
+        },
+        {
+          "etapa": 51,
+          "b": 273,
+          "DP[i][b]": 293,
+          "DP[i-1][b]": 283,
+          "decision": "acelerar",
+          "b_siguiente": 263
+        },
+        {
+          "etapa": 50,
+          "b": 263,
+          "DP[i][b]": 282,
+          "DP[i-1][b]": 278,
+          "decision": "acelerar",
+          "b_siguiente": 255
+        },
+        {
+          "etapa": 49,
+          "b": 255,
+          "DP[i][b]": 277,
+          "DP[i-1][b]": 272,
+          "decision": "acelerar",
+          "b_siguiente": 254
+        },
+        {
+          "etapa": 48,
+          "b": 254,
+          "DP[i][b]": 272,
+          "DP[i-1][b]": 264,
+          "decision": "acelerar",
+          "b_siguiente": 244
+        },
+        {
+          "etapa": 47,
+          "b": 244,
+          "DP[i][b]": 263,
+          "DP[i-1][b]": 263,
+          "decision": "no acelerar",
+          "b_siguiente": 244
+        },
+        {
+          "etapa": 46,
+          "b": 244,
+          "DP[i][b]": 263,
+          "DP[i-1][b]": 257,
+          "decision": "acelerar",
+          "b_siguiente": 243
+        },
+        {
+          "etapa": 45,
+          "b": 243,
+          "DP[i][b]": 257,
+          "DP[i-1][b]": 240,
+          "decision": "acelerar",
+          "b_siguiente": 238
+        },
+        {
+          "etapa": 44,
+          "b": 238,
+          "DP[i][b]": 240,
+          "DP[i-1][b]": 237,
+          "decision": "acelerar",
+          "b_siguiente": 231
+        },
+        {
+          "etapa": 43,
+          "b": 231,
+          "DP[i][b]": 236,
+          "DP[i-1][b]": 234,
+          "decision": "acelerar",
+          "b_siguiente": 224
+        },
+        {
+          "etapa": 42,
+          "b": 224,
+          "DP[i][b]": 233,
+          "DP[i-1][b]": 230,
+          "decision": "acelerar",
+          "b_siguiente": 214
+        },
+        {
+          "etapa": 41,
+          "b": 214,
+          "DP[i][b]": 229,
+          "DP[i-1][b]": 213,
+          "decision": "acelerar",
+          "b_siguiente": 207
+        },
+        {
+          "etapa": 40,
+          "b": 207,
+          "DP[i][b]": 212,
+          "DP[i-1][b]": 200,
+          "decision": "acelerar",
+          "b_siguiente": 199
+        },
+        {
+          "etapa": 39,
+          "b": 199,
+          "DP[i][b]": 199,
+          "DP[i-1][b]": 193,
+          "decision": "acelerar",
+          "b_siguiente": 196
+        },
+        {
+          "etapa": 38,
+          "b": 196,
+          "DP[i][b]": 193,
+          "DP[i-1][b]": 192,
+          "decision": "acelerar",
+          "b_siguiente": 190
+        },
+        {
+          "etapa": 37,
+          "b": 190,
+          "DP[i][b]": 192,
+          "DP[i-1][b]": 188,
+          "decision": "acelerar",
+          "b_siguiente": 185
+        },
+        {
+          "etapa": 36,
+          "b": 185,
+          "DP[i][b]": 188,
+          "DP[i-1][b]": 185,
+          "decision": "acelerar",
+          "b_siguiente": 178
+        },
+        {
+          "etapa": 35,
+          "b": 178,
+          "DP[i][b]": 184,
+          "DP[i-1][b]": 184,
+          "decision": "no acelerar",
+          "b_siguiente": 178
+        },
+        {
+          "etapa": 34,
+          "b": 178,
+          "DP[i][b]": 184,
+          "DP[i-1][b]": 184,
+          "decision": "no acelerar",
+          "b_siguiente": 178
+        },
+        {
+          "etapa": 33,
+          "b": 178,
+          "DP[i][b]": 184,
+          "DP[i-1][b]": 180,
+          "decision": "acelerar",
+          "b_siguiente": 177
+        },
+        {
+          "etapa": 32,
+          "b": 177,
+          "DP[i][b]": 180,
+          "DP[i-1][b]": 164,
+          "decision": "acelerar",
+          "b_siguiente": 172
+        },
+        {
+          "etapa": 31,
+          "b": 172,
+          "DP[i][b]": 164,
+          "DP[i-1][b]": 159,
+          "decision": "acelerar",
+          "b_siguiente": 162
+        },
+        {
+          "etapa": 30,
+          "b": 162,
+          "DP[i][b]": 159,
+          "DP[i-1][b]": 158,
+          "decision": "acelerar",
+          "b_siguiente": 152
+        },
+        {
+          "etapa": 29,
+          "b": 152,
+          "DP[i][b]": 158,
+          "DP[i-1][b]": 158,
+          "decision": "no acelerar",
+          "b_siguiente": 152
+        },
+        {
+          "etapa": 28,
+          "b": 152,
+          "DP[i][b]": 158,
+          "DP[i-1][b]": 157,
+          "decision": "acelerar",
+          "b_siguiente": 147
+        },
+        {
+          "etapa": 27,
+          "b": 147,
+          "DP[i][b]": 157,
+          "DP[i-1][b]": 156,
+          "decision": "acelerar",
+          "b_siguiente": 140
+        },
+        {
+          "etapa": 26,
+          "b": 140,
+          "DP[i][b]": 156,
+          "DP[i-1][b]": 145,
+          "decision": "acelerar",
+          "b_siguiente": 138
+        },
+        {
+          "etapa": 25,
+          "b": 138,
+          "DP[i][b]": 145,
+          "DP[i-1][b]": 142,
+          "decision": "acelerar",
+          "b_siguiente": 136
+        },
+        {
+          "etapa": 24,
+          "b": 136,
+          "DP[i][b]": 142,
+          "DP[i-1][b]": 133,
+          "decision": "acelerar",
+          "b_siguiente": 131
+        },
+        {
+          "etapa": 23,
+          "b": 131,
+          "DP[i][b]": 133,
+          "DP[i-1][b]": 127,
+          "decision": "acelerar",
+          "b_siguiente": 129
+        },
+        {
+          "etapa": 22,
+          "b": 129,
+          "DP[i][b]": 127,
+          "DP[i-1][b]": 118,
+          "decision": "acelerar",
+          "b_siguiente": 120
+        },
+        {
+          "etapa": 21,
+          "b": 120,
+          "DP[i][b]": 118,
+          "DP[i-1][b]": 118,
+          "decision": "no acelerar",
+          "b_siguiente": 120
+        },
+        {
+          "etapa": 20,
+          "b": 120,
+          "DP[i][b]": 118,
+          "DP[i-1][b]": 108,
+          "decision": "acelerar",
+          "b_siguiente": 116
+        },
+        {
+          "etapa": 19,
+          "b": 116,
+          "DP[i][b]": 108,
+          "DP[i-1][b]": 95,
+          "decision": "acelerar",
+          "b_siguiente": 106
+        },
+        {
+          "etapa": 18,
+          "b": 106,
+          "DP[i][b]": 95,
+          "DP[i-1][b]": 90,
+          "decision": "acelerar",
+          "b_siguiente": 96
+        },
+        {
+          "etapa": 17,
+          "b": 96,
+          "DP[i][b]": 90,
+          "DP[i-1][b]": 82,
+          "decision": "acelerar",
+          "b_siguiente": 89
+        },
+        {
+          "etapa": 16,
+          "b": 89,
+          "DP[i][b]": 82,
+          "DP[i-1][b]": 76,
+          "decision": "acelerar",
+          "b_siguiente": 84
+        },
+        {
+          "etapa": 15,
+          "b": 84,
+          "DP[i][b]": 76,
+          "DP[i-1][b]": 75,
+          "decision": "acelerar",
+          "b_siguiente": 81
+        },
+        {
+          "etapa": 14,
+          "b": 81,
+          "DP[i][b]": 75,
+          "DP[i-1][b]": 75,
+          "decision": "no acelerar",
+          "b_siguiente": 81
+        },
+        {
+          "etapa": 13,
+          "b": 81,
+          "DP[i][b]": 75,
+          "DP[i-1][b]": 68,
+          "decision": "acelerar",
+          "b_siguiente": 71
+        },
+        {
+          "etapa": 12,
+          "b": 71,
+          "DP[i][b]": 68,
+          "DP[i-1][b]": 55,
+          "decision": "acelerar",
+          "b_siguiente": 64
+        },
+        {
+          "etapa": 11,
+          "b": 64,
+          "DP[i][b]": 55,
+          "DP[i-1][b]": 54,
+          "decision": "acelerar",
+          "b_siguiente": 59
+        },
+        {
+          "etapa": 10,
+          "b": 59,
+          "DP[i][b]": 54,
+          "DP[i-1][b]": 45,
+          "decision": "acelerar",
+          "b_siguiente": 58
+        },
+        {
+          "etapa": 9,
+          "b": 58,
+          "DP[i][b]": 45,
+          "DP[i-1][b]": 45,
+          "decision": "no acelerar",
+          "b_siguiente": 58
+        },
+        {
+          "etapa": 8,
+          "b": 58,
+          "DP[i][b]": 45,
+          "DP[i-1][b]": 42,
+          "decision": "acelerar",
+          "b_siguiente": 49
+        },
+        {
+          "etapa": 7,
+          "b": 49,
+          "DP[i][b]": 42,
+          "DP[i-1][b]": 39,
+          "decision": "acelerar",
+          "b_siguiente": 46
+        },
+        {
+          "etapa": 6,
+          "b": 46,
+          "DP[i][b]": 39,
+          "DP[i-1][b]": 32,
+          "decision": "acelerar",
+          "b_siguiente": 38
+        },
+        {
+          "etapa": 5,
+          "b": 38,
+          "DP[i][b]": 32,
+          "DP[i-1][b]": 29,
+          "decision": "acelerar",
+          "b_siguiente": 29
+        },
+        {
+          "etapa": 4,
+          "b": 29,
+          "DP[i][b]": 29,
+          "DP[i-1][b]": 14,
+          "decision": "acelerar",
+          "b_siguiente": 28
+        },
+        {
+          "etapa": 3,
+          "b": 28,
+          "DP[i][b]": 14,
+          "DP[i-1][b]": 12,
+          "decision": "acelerar",
+          "b_siguiente": 18
+        },
+        {
+          "etapa": 2,
+          "b": 18,
+          "DP[i][b]": 12,
+          "DP[i-1][b]": 8,
+          "decision": "acelerar",
+          "b_siguiente": 12
+        },
+        {
+          "etapa": 1,
+          "b": 12,
+          "DP[i][b]": 8,
+          "DP[i-1][b]": 0,
+          "decision": "acelerar",
+          "b_siguiente": 2
+        }
+      ],
+      "verificacion": {
+        "costo_dentro_del_presupuesto": true,
+        "reduccion_coincide_con_tabla": true,
+        "d_menor_o_igual_t": true
+      },
+      "tabla_DP": "omitida por tamaño (ver LIMITE_CELDAS_TRAZA)"
+    }
+  },
+  "auditoria": {
+    "instancia": {
+      "n": 40,
+      "r": 50,
+      "d": 25
+    },
+    "factible": true,
+    "tiempo_ms": {
+      "mediana": 0.091839,
+      "minimo": 0.081479,
+      "mediciones": [
+        0.093753,
+        0.091839,
+        0.08429,
+        0.102934,
+        0.081479
+      ]
+    },
+    "resultado": {
+      "interacciones_auditadas": [
+        "10",
+        "12",
+        "24",
+        "26",
+        "1",
+        "3"
+      ],
+      "numero_de_auditorias": 6,
+      "d_max_categorias_por_interaccion": 25,
+      "cota_H_d": 3.815958
+    },
+    "traza": {
+      "factibilidad_verificada": true,
+      "elecciones": [
+        {
+          "paso": 1,
+          "interaccion": "10",
+          "categorias_nuevas": [
+            "1",
+            "3",
+            "4",
+            "5",
+            "7",
+            "8",
+            "9",
+            "10",
+            "12",
+            "13",
+            "17",
+            "20",
+            "22",
+            "23",
+            "25",
+            "28",
+            "29",
+            "36",
+            "41",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50"
+          ],
+          "cantidad_nuevas": 25,
+          "categorias_restantes": 25
+        },
+        {
+          "paso": 2,
+          "interaccion": "12",
+          "categorias_nuevas": [
+            "6",
+            "11",
+            "14",
+            "15",
+            "16",
+            "19",
+            "30",
+            "31",
+            "33",
+            "34",
+            "38",
+            "40"
+          ],
+          "cantidad_nuevas": 12,
+          "categorias_restantes": 13
+        },
+        {
+          "paso": 3,
+          "interaccion": "24",
+          "categorias_nuevas": [
+            "2",
+            "18",
+            "27",
+            "32",
+            "37",
+            "42"
+          ],
+          "cantidad_nuevas": 6,
+          "categorias_restantes": 7
+        },
+        {
+          "paso": 4,
+          "interaccion": "26",
+          "categorias_nuevas": [
+            "26",
+            "39",
+            "43",
+            "44"
+          ],
+          "cantidad_nuevas": 4,
+          "categorias_restantes": 3
+        },
+        {
+          "paso": 5,
+          "interaccion": "1",
+          "categorias_nuevas": [
+            "21",
+            "24"
+          ],
+          "cantidad_nuevas": 2,
+          "categorias_restantes": 1
+        },
+        {
+          "paso": 6,
+          "interaccion": "3",
+          "categorias_nuevas": [
+            "35"
+          ],
+          "cantidad_nuevas": 1,
+          "categorias_restantes": 0
+        }
+      ],
+      "verificacion": {
+        "cubre_todas_las_categorias": true
+      }
+    },
+    "verificacion_exacta": "omitida (n = 40 > 20)"
+  }
+}

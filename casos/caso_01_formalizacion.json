@@ -1,0 +1,17 @@
+{
+  "id": "caso_01_formalizacion",
+  "descripcion": "Ejemplos del documento de formalización (óptimos conocidos: A* = {2,3}, D* = 15; auditoría mínima = 2).",
+  "aceleracion": {
+    "presupuesto": 6,
+    "etapas": [
+      {"t": 5, "c": 3, "d": 2},
+      {"t": 8, "c": 4, "d": 5},
+      {"t": 6, "c": 2, "d": 3},
+      {"t": 4, "c": 3, "d": 1}
+    ]
+  },
+  "auditoria": {
+    "categorias": 5,
+    "interacciones": [[1, 2, 3], [3, 4], [4, 5], [1, 5]]
+  }
+}

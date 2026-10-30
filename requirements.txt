@@ -1,0 +1,2 @@
+# La solución base usa solo la biblioteca estándar de Python (>= 3.10).
+# No hay dependencias externas para ejecutar `python -m ruta.ejecutar`.

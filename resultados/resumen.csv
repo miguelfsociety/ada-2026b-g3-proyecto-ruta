@@ -1,0 +1,13 @@
+caso,parte,version_codigo,n,B_o_r,resultado,tiempo_mediana_ms,tiempo_min_ms,detalle
+caso_01_formalizacion,aceleracion,0.1.0,4,6,15,0.008417,0.005939,"acelerar [2, 3]; costo 6; reducción 8"
+caso_01_formalizacion,auditoria,0.1.0,4,5,2,0.008278,0.006836,"auditar ['1', '3']; óptimo 2"
+caso_02_reducciones,aceleracion,0.1.0,3,5,5,0.006202,0.005167,"acelerar [1, 3]; costo 5; reducción 7"
+caso_02_reducciones,auditoria,0.1.0,4,4,2,0.007378,0.007078,"auditar ['v3', 'v1']; óptimo 2"
+caso_03_voraz_no_optimo,aceleracion,0.1.0,3,100,8,0.006433,0.005037,"acelerar [1, 2, 3]; costo 10; reducción 14"
+caso_03_voraz_no_optimo,auditoria,0.1.0,3,6,3,0.006397,0.005705,"auditar ['I3', 'I1', 'I2']; óptimo 2"
+caso_04_sintetico,aceleracion,0.1.0,10,30,28,0.031966,0.021534,"acelerar [2, 3, 4, 5, 6, 7, 10]; costo 28; reducción 56"
+caso_04_sintetico,auditoria,0.1.0,8,12,7,0.012669,0.012275,"auditar ['5', '2', '1', '3', '4', '6', '7']; óptimo 7"
+caso_05_sintetico,aceleracion,0.1.0,25,80,137,0.113682,0.112213,"acelerar [2, 3, 5, 7, 10, 15, 16, 17, 20, 21, 23, 24, 25]; costo 75; reducción 158"
+caso_05_sintetico,auditoria,0.1.0,14,20,5,0.019347,0.018915,"auditar ['3', '5', '8', '6', '2']; óptimo 4"
+caso_06_sintetico,aceleracion,0.1.0,60,300,315,1.045926,1.025894,"acelerar [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 15, 16, 17, 18, 19, 20, 22, 23, 24, 25, 26, 27, 28, 30, 31, 32, 33, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 48, 49, 50, 51, 54, 55, 57, 58, 59, 60]; costo 298; reducción 336"
+caso_06_sintetico,auditoria,0.1.0,40,50,6,0.091839,0.081479,"auditar ['10', '12', '24', '26', '1', '3']"
