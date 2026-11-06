@@ -1,10 +1,10 @@
 {
   "caso": "caso_02_reducciones",
-  "archivo": "casos/caso_02_reducciones.json",
+  "archivo": "casos\\caso_02_reducciones.json",
   "version_codigo": "0.1.0",
-  "fecha": "2026-10-30T04:35:29",
-  "python": "3.12.3",
-  "plataforma": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+  "fecha": "2026-11-06T09:17:46",
+  "python": "3.14.7",
+  "plataforma": "Windows-11-10.0.26300-SP0",
   "repeticiones": 5,
   "aceleracion": {
     "instancia": {
@@ -13,14 +13,14 @@
       "duracion_normal": 12
     },
     "tiempo_ms": {
-      "mediana": 0.006202,
-      "minimo": 0.005167,
+      "mediana": 0.0058,
+      "minimo": 0.0052,
       "mediciones": [
-        0.013153,
-        0.007603,
-        0.006202,
-        0.005435,
-        0.005167
+        0.0159,
+        0.0071,
+        0.0058,
+        0.0052,
+        0.0052
       ]
     },
     "resultado": {
@@ -143,14 +143,14 @@
     },
     "factible": true,
     "tiempo_ms": {
-      "mediana": 0.007378,
-      "minimo": 0.007078,
+      "mediana": 0.0076,
+      "minimo": 0.0073,
       "mediciones": [
-        0.231245,
-        0.011384,
-        0.007378,
-        0.007178,
-        0.007078
+        0.0139,
+        0.0085,
+        0.0076,
+        0.0073,
+        0.0074
       ]
     },
     "resultado": {
@@ -198,7 +198,7 @@
       ],
       "razon_voraz_sobre_optimo": 1.0,
       "cumple_cota_H_d": true,
-      "tiempo_ms": 0.009584
+      "tiempo_ms": 0.0105
     }
   }
 }

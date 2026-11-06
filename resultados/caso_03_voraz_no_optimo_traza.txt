@@ -1,5 +1,5 @@
-Caso: caso_03_voraz_no_optimo   (código v0.1.0, 2026-10-30T04:35:29, Python 3.12.3)
-Archivo: casos/caso_03_voraz_no_optimo.json
+Caso: caso_03_voraz_no_optimo   (código v0.1.0, 2026-11-06T09:17:46, Python 3.14.7)
+Archivo: casos\caso_03_voraz_no_optimo.json
 
 === Parte 1: aceleración de la cadena (programación dinámica) ===
 n = 3 etapas, presupuesto B = 100, duración normal = 22
@@ -23,7 +23,7 @@ Reconstrucción (de la última etapa a la primera):
 Etapas aceleradas: [1, 2, 3]
 Costo total = 10 <= B = 100; reducción = 14; duración mínima = 8
 Verificación: {'costo_dentro_del_presupuesto': True, 'reduccion_coincide_con_tabla': True, 'd_menor_o_igual_t': True}
-Tiempo (ms): mediana = 0.006433, mínimo = 0.005037
+Tiempo (ms): mediana = 0.0064, mínimo = 0.006
 
 === Parte 2: cobertura de auditoría (voraz) ===
 n = 3 interacciones, r = 6 categorías, d = 4
@@ -35,4 +35,4 @@ Elecciones del voraz:
 Interacciones auditadas: ['I3', 'I1', 'I2'] (3 auditorías)
 Verificación: {'cubre_todas_las_categorias': True}
 Óptimo exacto (fuerza bruta): 2 -> ['I1', 'I2']; razón voraz/óptimo = 1.5; cota H(d) = 2.083333; cumple la cota: True
-Tiempo voraz (ms): mediana = 0.006397, mínimo = 0.005705
+Tiempo voraz (ms): mediana = 0.0075, mínimo = 0.0074

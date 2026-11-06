@@ -1,10 +1,10 @@
 {
   "caso": "caso_03_voraz_no_optimo",
-  "archivo": "casos/caso_03_voraz_no_optimo.json",
+  "archivo": "casos\\caso_03_voraz_no_optimo.json",
   "version_codigo": "0.1.0",
-  "fecha": "2026-10-30T04:35:29",
-  "python": "3.12.3",
-  "plataforma": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+  "fecha": "2026-11-06T09:17:46",
+  "python": "3.14.7",
+  "plataforma": "Windows-11-10.0.26300-SP0",
   "repeticiones": 5,
   "aceleracion": {
     "instancia": {
@@ -13,14 +13,14 @@
       "duracion_normal": 22
     },
     "tiempo_ms": {
-      "mediana": 0.006433,
-      "minimo": 0.005037,
+      "mediana": 0.0064,
+      "minimo": 0.006,
       "mediciones": [
-        0.011568,
-        0.006433,
-        0.005476,
-        0.005037,
-        0.049912
+        0.0201,
+        0.0077,
+        0.0064,
+        0.0061,
+        0.006
       ]
     },
     "resultado": {
@@ -179,14 +179,14 @@
     },
     "factible": true,
     "tiempo_ms": {
-      "mediana": 0.006397,
-      "minimo": 0.005705,
+      "mediana": 0.0075,
+      "minimo": 0.0074,
       "mediciones": [
-        0.010889,
-        0.006905,
-        0.006397,
-        0.005705,
-        0.006014
+        0.0142,
+        0.0082,
+        0.0075,
+        0.0075,
+        0.0074
       ]
     },
     "resultado": {
@@ -245,7 +245,7 @@
       ],
       "razon_voraz_sobre_optimo": 1.5,
       "cumple_cota_H_d": true,
-      "tiempo_ms": 0.006999
+      "tiempo_ms": 0.0096
     }
   }
 }

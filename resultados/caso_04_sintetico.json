@@ -1,10 +1,10 @@
 {
   "caso": "caso_04_sintetico",
-  "archivo": "casos/caso_04_sintetico.json",
+  "archivo": "casos\\caso_04_sintetico.json",
   "version_codigo": "0.1.0",
-  "fecha": "2026-10-30T04:35:29",
-  "python": "3.12.3",
-  "plataforma": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+  "fecha": "2026-11-06T09:17:46",
+  "python": "3.14.7",
+  "plataforma": "Windows-11-10.0.26300-SP0",
   "repeticiones": 5,
   "aceleracion": {
     "instancia": {
@@ -13,14 +13,14 @@
       "duracion_normal": 84
     },
     "tiempo_ms": {
-      "mediana": 0.031966,
-      "minimo": 0.021534,
+      "mediana": 0.0292,
+      "minimo": 0.0279,
       "mediciones": [
-        0.028111,
-        0.021534,
-        0.076428,
-        0.031966,
-        0.078023
+        0.0374,
+        0.0295,
+        0.0279,
+        0.0292,
+        0.0287
       ]
     },
     "resultado": {
@@ -841,14 +841,14 @@
     },
     "factible": true,
     "tiempo_ms": {
-      "mediana": 0.012669,
-      "minimo": 0.012275,
+      "mediana": 0.0146,
+      "minimo": 0.0144,
       "mediciones": [
-        0.018578,
-        0.021894,
-        0.012669,
-        0.012625,
-        0.012275
+        0.0219,
+        0.0165,
+        0.0145,
+        0.0146,
+        0.0144
       ]
     },
     "resultado": {
@@ -954,7 +954,7 @@
       ],
       "razon_voraz_sobre_optimo": 1.0,
       "cumple_cota_H_d": true,
-      "tiempo_ms": 0.156718
+      "tiempo_ms": 0.0594
     }
   }
 }

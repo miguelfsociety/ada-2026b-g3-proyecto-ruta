@@ -1,5 +1,5 @@
-Caso: caso_05_sintetico   (código v0.1.0, 2026-10-30T04:35:29, Python 3.12.3)
-Archivo: casos/caso_05_sintetico.json
+Caso: caso_05_sintetico   (código v0.1.0, 2026-11-06T09:17:46, Python 3.14.7)
+Archivo: casos\caso_05_sintetico.json
 
 === Parte 1: aceleración de la cadena (programación dinámica) ===
 n = 25 etapas, presupuesto B = 80, duración normal = 295
@@ -34,7 +34,7 @@ Reconstrucción (de la última etapa a la primera):
 Etapas aceleradas: [2, 3, 5, 7, 10, 15, 16, 17, 20, 21, 23, 24, 25]
 Costo total = 75 <= B = 80; reducción = 158; duración mínima = 137
 Verificación: {'costo_dentro_del_presupuesto': True, 'reduccion_coincide_con_tabla': True, 'd_menor_o_igual_t': True}
-Tiempo (ms): mediana = 0.113682, mínimo = 0.112213
+Tiempo (ms): mediana = 0.1624, mínimo = 0.1594
 
 === Parte 2: cobertura de auditoría (voraz) ===
 n = 14 interacciones, r = 20 categorías, d = 8
@@ -48,4 +48,4 @@ Elecciones del voraz:
 Interacciones auditadas: ['3', '5', '8', '6', '2'] (5 auditorías)
 Verificación: {'cubre_todas_las_categorias': True}
 Óptimo exacto (fuerza bruta): 4 -> ['2', '3', '6', '13']; razón voraz/óptimo = 1.25; cota H(d) = 2.717857; cumple la cota: True
-Tiempo voraz (ms): mediana = 0.019347, mínimo = 0.018915
+Tiempo voraz (ms): mediana = 0.0267, mínimo = 0.0261

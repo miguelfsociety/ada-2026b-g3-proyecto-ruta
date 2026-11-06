@@ -1,5 +1,5 @@
-Caso: caso_01_formalizacion   (código v0.1.0, 2026-10-30T04:35:29, Python 3.12.3)
-Archivo: casos/caso_01_formalizacion.json
+Caso: caso_01_formalizacion   (código v0.1.0, 2026-11-06T09:17:46, Python 3.14.7)
+Archivo: casos\caso_01_formalizacion.json
 
 === Parte 1: aceleración de la cadena (programación dinámica) ===
 n = 4 etapas, presupuesto B = 6, duración normal = 23
@@ -26,7 +26,7 @@ Reconstrucción (de la última etapa a la primera):
 Etapas aceleradas: [2, 3]
 Costo total = 6 <= B = 6; reducción = 8; duración mínima = 15
 Verificación: {'costo_dentro_del_presupuesto': True, 'reduccion_coincide_con_tabla': True, 'd_menor_o_igual_t': True}
-Tiempo (ms): mediana = 0.008417, mínimo = 0.005939
+Tiempo (ms): mediana = 0.0082, mínimo = 0.0062
 
 === Parte 2: cobertura de auditoría (voraz) ===
 n = 4 interacciones, r = 5 categorías, d = 3
@@ -37,4 +37,4 @@ Elecciones del voraz:
 Interacciones auditadas: ['1', '3'] (2 auditorías)
 Verificación: {'cubre_todas_las_categorias': True}
 Óptimo exacto (fuerza bruta): 2 -> ['1', '3']; razón voraz/óptimo = 1.0; cota H(d) = 1.833333; cumple la cota: True
-Tiempo voraz (ms): mediana = 0.008278, mínimo = 0.006836
+Tiempo voraz (ms): mediana = 0.009, mínimo = 0.0077
